@@ -8,16 +8,19 @@ int main()
     int num;
     cout<<"Please enter you'r number: ";
     cin>>num;
-    if (num==1)
-        cout<<"your number is prime";
-    if (IsPrime(num))
-    {
-        cout<<"your number is prime";
-    }
-    else
-    {
+    if (num==1 || num==0)
         cout<<"your number is not prime";
-    }
+    else    
+    {
+        if (IsPrime(num))
+        {
+            cout<<"your number is prime";
+        }
+        else
+        {
+            cout<<"your number is not prime";
+        }
+    }   
     
     return 0;
 }
